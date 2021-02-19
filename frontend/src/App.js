@@ -48,7 +48,10 @@ function App(){
             <Header title="Projects"/>
 
             <ul>
-                {projects.map(project => <li key={project.id}>{project.title}</li> )}
+                {projects.map(project => 
+                <li key={project.id}>
+                    {project.title}
+                </li> )}
             </ul>
 
             <button type="button" onClick={handleAddProject}>Adicionar projeto</button>
